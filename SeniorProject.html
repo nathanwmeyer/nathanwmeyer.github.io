@@ -22,7 +22,6 @@
 <br />
 
 <h3>Design Diagrams</h3>
-<p>Insert Design Diagrams here before</p>
 <img src="img/ProjectSitemap.png" alt="image of project sitemap" />
 <p>This diagram is of the application’s sitemap, showing what parts of the application can be accessed through other parts of the application. The game can only be accessed after creating a user and logging in, otherwise, the user will be redirected to the registration page.</p>
 <br />
@@ -45,18 +44,105 @@
 <p>This is the UML Class Diagram for the application. This diagram details the classes used to store and represent data for the Game Buttons, Game Save Data, and User Data. The diagram also details the controller classes used to navigate and perform functions and the services used to play the game and connect with the MySQL database to manage User and Game Save data.</p>
 <br />
 
-<h4>Code Snippets</h4>
+<h3>Code Snippets</h3>
 <p>Insert Code Snippets Here</p>
+<h5>Button Model Class</h5>
+<p>
+    // class: ButtonModel. This class represents a button in the application's game board
+    public class ButtonModel
+    {
+    public ButtonModel(int buttonId, int state)
+    {
+    ButtonId = buttonId;
+    State = state;
+    }
+
+    // ButtonID: the button's id on the board
+    public int ButtonId { get; set; }
+
+    // State: the button's state, 1 is on, 0 is off
+    public int State { get; set; }
+    }
+</p>
+<h5>User Model Class</h5>
+<p>
+    // class: UserModel. This class represents a user in the application. This class is used for logging in users and managing saved game data for the user.
+    public class UserModel
+    {
+    public UserModel()
+    {
+    }
+
+    // constructor for saving or retrieving user data
+    public UserModel(int userId, string username, string password)
+    {
+    UserId = userId;
+    Username = username;
+    Password = password;
+    }
+
+    // UserId: the user's ID number
+    public int UserId { get; set; }
+
+    // Username: the user's selected username. This username must be unique to be saved to the MySQL server
+    public string Username { get; set; }
+
+    // Password: the user's password. This password is encrypted using BCrypt.NET-Next
+    public string Password { get; set; }
+    }
+</p>
+<h5>Game Logic Class Change Button Method</h5>
+<p>
+    // method: changeButtons. This method changes the button board based on the button clicked. This method returns the updated list of buttons.
+    public List<ButtonModel>
+        changeButtons(List<ButtonModel>
+            buttons, int buttonId) {
+            // retrieve the current value of the selected button
+            int value = buttons.ElementAt(buttonId).State;
+
+            // change the button's state
+            buttons.ElementAt(buttonId).State = (value + 1) % 2;
+
+            // get the information about the surrounding buttons
+            // is the button on the left a valid button to change?
+            bool clearLeft = buttonId % ROW_LENGTH > 0; // it will only be valid if this button is NOT the first button
+
+            // is the button on the right a valid button to change?
+            bool clearRight = buttonId % ROW_LENGTH != ROW_LENGTH -1; // it will only be valid if this button is NOT the last button
+
+            // is the button above this button a valid button to change?
+            bool clearTop = buttonId > ROW_LENGTH - 1; // it will only be valid if this button is NOT on the first row
+
+            // is the button below this button a valid button to change?
+            bool clearBottom = buttonId < GRID_SIZE - ROW_LENGTH; // it will only be valid if this button is NOT on the last row.
+
+            //change the buttons that are valid
+            if (clearLeft) { buttons.ElementAt(buttonId - 1).State = (buttons.ElementAt(buttonId - 1).State + 1) % 2; }
+            if (clearRight) { buttons.ElementAt(buttonId + 1).State = (buttons.ElementAt(buttonId + 1).State + 1) % 2; }
+            if (clearTop) { buttons.ElementAt(buttonId - ROW_LENGTH).State = (buttons.ElementAt(buttonId - ROW_LENGTH).State + 1) % 2; }
+            if (clearBottom) { buttons.ElementAt(buttonId + ROW_LENGTH).State = (buttons.ElementAt(buttonId + ROW_LENGTH).State + 1) % 2; }
+
+
+            // return the updated list of buttons
+            return buttons;
+            }
+</p>
+<br />
+<p>The entire source code can be viewed at:</p>
+<a href="https://github.com/nathanwmeyer/451-NathanMeyer-SeniorProject/tree/master/451-NathanMeyer-SeniorProject">https://github.com/nathanwmeyer/451-NathanMeyer-SeniorProject/tree/master/451-NathanMeyer-SeniorProject</a>
+<br/>
+
+<h3>Project Background Details</h3>
+<p>The purpose of this project is to develop an online game application that allows users to play a puzzle game where internet access is available. The goal is to provide entertainment for users by developing an application that is easy to access and use.</p>
 <br />
 
-<h4>Project Background Details</h4>
-<p>Insert Project Background Details Here</p>
+<h3>Approach to Implementation</h3>
+<h5>General Technical Approach:</h5>
+<p>This project is a web-based application that can be used by any user through a web browser. When the user first accesses the website, they will be given the choice to log in or register a user account. If they attempt to access the game page without logging in, they will be redirected to the registration page instead. When registering, the user must provide a username and password, which will be stored securely on a MySQL server. After logging in or registering, the user will be allowed to play the game. While they are playing the game, the user can save the game, load a previously saved game, or reset the game board with a new game.</p>
+<h5>Implementation of Non-Functional Requirements</h5>
+<p>For the storage and management of data, we used MySQL for the Database management software. In addition, BCrypt.Net-Next was implemented to allow for the secure hashing of passwords. Finally, C# .NET was utilized to allow for the usage of Razor webpages and C# classes in the creation of the application’s classes.</p>
 <br />
 
-<h4>Approach to Implementation</h4>
-<p>Insert Approach to Implementation Here</p>
-<br />
-
-<h4>How to Access Project</h4>
+<h3>How to Access Project</h3>
 <p>Please click the link below to be sent to the project website.</p>
 <a href="gcu-seniorproject-nathanm.azurewebsites.net">Continue to Senior Project</a>
