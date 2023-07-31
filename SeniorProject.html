@@ -48,7 +48,7 @@
 <p>Insert Code Snippets Here</p>
 <h5>Button Model Class</h5>
 <p style="white-space: pre;">
-    // class: ButtonModel. This class represents a button in the application\'s game board
+    // class: ButtonModel. This class represents a button in the application&#39;s game board
     public class ButtonModel
     {
     public ButtonModel(int buttonId, int state)
@@ -57,10 +57,10 @@
     State = state;
     }
 
-    // ButtonID: the button's id on the board
+    // ButtonID: the button&#39;s id on the board
     public int ButtonId { get; set; }
 
-    // State: the button's state, 1 is on, 0 is off
+    // State: the button&#39;s state, 1 is on, 0 is off
     public int State { get; set; }
     }
 </p>
@@ -81,13 +81,13 @@
     Password = password;
     }
 
-    // UserId: the user\'s ID number
+    // UserId: the user&#39;s ID number
     public int UserId { get; set; }
 
-    // Username: the user\'s selected username. This username must be unique to be saved to the MySQL server
+    // Username: the user&#39;s selected username. This username must be unique to be saved to the MySQL server
     public string Username { get; set; }
 
-    // Password: the user\'s password. This password is encrypted using BCrypt.NET-Next
+    // Password: the user&#39;s password. This password is encrypted using BCrypt.NET-Next
     public string Password { get; set; }
     }
 </p>
@@ -100,7 +100,7 @@
             // retrieve the current value of the selected button
             int value = buttons.ElementAt(buttonId).State;
 
-            // change the button\'s state
+            // change the button&#39;s state
             buttons.ElementAt(buttonId).State = (value + 1) % 2;
 
             // get the information about the surrounding buttons
