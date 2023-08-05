@@ -5,157 +5,165 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .content
-        {
-            margin:auto
-        }
-    </style>
 </head>
-<div class="content">
+<div class="justify-content-center align-items-center">
     <h1 style="color:red">This portfolio is a work in progress and will be improved in the final Milestone for CST-452</h1>
-<h1>Senior Project</h1>
-<p>This project was for CST-451 and CST-452, part of the Bachelor of Science in Software Development at Grand Canyon University. The purpose of this project was to demonstrate planning and design capabilities.</p>
+    <h1>Senior Project</h1>
+    <p>This project was for CST-451 and CST-452, part of the Bachelor of Science in Software Development at Grand Canyon University. The purpose of this project was to demonstrate planning and design capabilities.</p>
 
-<br />
-<h3>Project Overview</h3>
-<h5>Problem and Project Background</h5>
-<p>The purpose of this project is to develop an online game application that allows users to play a puzzle game where internet access is available. The goal is to provide entertainment for users by developing an application that is easy to access and use.</p>
-<h5>Application of Christian Worldview</h5>
-<p>According to the Christian worldview we as Christians follow the doctrine given to us by the word of God in the Bible. The Bible tells us to be kind to others, recommending that we show hospitality to strangers in passages such as Hebrews 13:2 (English Standard Version Bible, 2001). Showing kindness and love to others is one of the main ethical perspectives of the Christian Worldview, and this aspect is what I plan to express in this project.</p>
-<h5>Project Objectives</h5>
-<p>The objective of this project is to build a web application that can be accessed by users. The users will be able to log in to play the game and can save the games they are playing to their logged-in account.</p>
-<h5>Project Challenges and Measures of Success</h5>
-<p>The project will meet six deadlines during its development. The project&#39;s success is measured by what percentage of goals had been met before each deadline.</p>
-<h5>Benefits and Opportunities</h5>
-<p>This project will allow all participating developers to gain experience in the web application development field and demonstrate knowledge of common development practices.</p>
-<h5>Project Summary</h5>
-<p>This project is a website where users can register and login to play a game based on Lights Out. The user can choose to start a new game, save a game in progress, and resume a saved game at any time. Both user login information and saved game data are stored securely in a relational database.</p>
-<br />
+    <br />
+    <h3>Project Overview</h3>
+    <h5>Problem and Project Background</h5>
+    <p>The purpose of this project is to develop an online game application that allows users to play a puzzle game where internet access is available. The goal is to provide entertainment for users by developing an application that is easy to access and use.</p>
+    <h5>Application of Christian Worldview</h5>
+    <p>According to the Christian worldview we as Christians follow the doctrine given to us by the word of God in the Bible. The Bible tells us to be kind to others, recommending that we show hospitality to strangers in passages such as Hebrews 13:2 (English Standard Version Bible, 2001). Showing kindness and love to others is one of the main ethical perspectives of the Christian Worldview, and this aspect is what I plan to express in this project.</p>
+    <h5>Project Objectives</h5>
+    <p>The objective of this project is to build a web application that can be accessed by users. The users will be able to log in to play the game and can save the games they are playing to their logged-in account.</p>
+    <h5>Project Challenges and Measures of Success</h5>
+    <p>The project will meet six deadlines during its development. The project&#39;s success is measured by what percentage of goals had been met before each deadline.</p>
+    <h5>Benefits and Opportunities</h5>
+    <p>This project will allow all participating developers to gain experience in the web application development field and demonstrate knowledge of common development practices.</p>
+    <h5>Project Summary</h5>
+    <p>This project is a website where users can register and login to play a game based on Lights Out. The user can choose to start a new game, save a game in progress, and resume a saved game at any time. Both user login information and saved game data are stored securely in a relational database.</p>
+    <br />
 
-<h3>Design Diagrams</h3>
-<img width="500px" src="img/ProjectSitemap.png" alt="image of project sitemap" />
-<p>This diagram is of the application&#39;s sitemap, showing what parts of the application can be accessed through other parts of the application. The game can only be accessed after creating a user and logging in, otherwise, the user will be redirected to the registration page.</p>
-<br />
-<img width="500px" src="img/ProgramFlowchart.png" alt="image of project flowchart"/>
-<p>This image details the program flow for the application. When the user first accesses the website, they are allowed to either login or register as a new user account. If the user attempts to access the game without either logging in first or creating an account, they will be redirected to the User Registration page. After registering or logging in, the user will be allowed to access and play the game. While they are playing the game, the user has three options. They can choose to save the game which saves the game to a MySQL database, they can choose to load one of their saved games from a list of saved games retrieved from the MySQL database, or they can choose to restart the game with a new puzzle to solve.</p>
-<br />
-<img width="500px" src="img/HomeWireframe.png" alt="image of home page wireframe"/>
-<p>This Wireframe Diagram shows an example of the application&#39;s home page, users would see this page when first accessing the website. This page would allow them to access the Login and Registration Pages.</p>
-<br />
-<img width="500px" src="img/RegistrationWireframe.png" alt="image of registration page wireframe"/>
-<p>This Wireframe Diagram shows an example of the application&#39;s registration page, users would see this page when first registering as a user. The user needs to provide a username and password to play the application’s game.</p>
-<br />
-<img width="500px" src="img/LoginWireframe.png" alt="image of login page wireframe"/>
-<p>This Wireframe Diagram shows an example of the application&#39;s login page, users would see this page when signing into the application to play the game. The user must log in to play the game, as user information is required to save the game.</p>
-<br />
-<img width="500px" src="img/GameWireframe.png" alt="image of game page wireframe"/>
-<p>This Wireframe Diagram shows an example of the application&#39;s game page, users would see this page when playing the game. This game is a version of the game “Light’s Out” where the objective is to ensure that all of the buttons are unlit. Pressing a button changes the state of the button and the surrounding buttons.</p>
-<br />
-<img width="500px" width="500px" src="img/UMLDiagram.png" alt="image of project UML diagram" />
-<p>This is the UML Class Diagram for the application. This diagram details the classes used to store and represent data for the Game Buttons, Game Save Data, and User Data. The diagram also details the controller classes used to navigate and perform functions and the services used to play the game and connect with the MySQL database to manage User and Game Save data.</p>
-<br />
+    <h3>Design Diagrams</h3>
+    <div class="border border-dark rounded">
+        <img width="500px" src="img/ProjectSitemap.png" alt="image of project sitemap" />
+        <p>This diagram is of the application&#39;s sitemap, showing what parts of the application can be accessed through other parts of the application. The game can only be accessed after creating a user and logging in, otherwise, the user will be redirected to the registration page.</p>
+    </div>
+    <br />
+    <div class="border border-dark rounded">
+        <img width="500px" src="img/ProgramFlowchart.png" alt="image of project flowchart" />
+        <p>This image details the program flow for the application. When the user first accesses the website, they are allowed to either login or register as a new user account. If the user attempts to access the game without either logging in first or creating an account, they will be redirected to the User Registration page. After registering or logging in, the user will be allowed to access and play the game. While they are playing the game, the user has three options. They can choose to save the game which saves the game to a MySQL database, they can choose to load one of their saved games from a list of saved games retrieved from the MySQL database, or they can choose to restart the game with a new puzzle to solve.</p>
+    </div>
+    <br />
+    <div class="border border-dark rounded">
+        <img width="500px" src="img/HomeWireframe.png" alt="image of home page wireframe" />
+        <p>This Wireframe Diagram shows an example of the application&#39;s home page, users would see this page when first accessing the website. This page would allow them to access the Login and Registration Pages.</p>
+    </div>
+    <br />
+    <div class="border border-dark rounded">
+        <img width="500px" src="img/RegistrationWireframe.png" alt="image of registration page wireframe" />
+        <p>This Wireframe Diagram shows an example of the application&#39;s registration page, users would see this page when first registering as a user. The user needs to provide a username and password to play the application’s game.</p>
+    </div>
+    <br />
+    <div class="border border-dark rounded">
+        <img width="500px" src="img/LoginWireframe.png" alt="image of login page wireframe" />
+        <p>This Wireframe Diagram shows an example of the application&#39;s login page, users would see this page when signing into the application to play the game. The user must log in to play the game, as user information is required to save the game.</p>
+    </div>
+    <br />
+    <div class="border border-dark rounded">
+        <img width="500px" src="img/GameWireframe.png" alt="image of game page wireframe" />
+        <p>This Wireframe Diagram shows an example of the application&#39;s game page, users would see this page when playing the game. This game is a version of the game “Light’s Out” where the objective is to ensure that all of the buttons are unlit. Pressing a button changes the state of the button and the surrounding buttons.</p>
+    </div>
+    <br />
+    <div class="border border-dark rounded">
+        <img width="500px" width="500px" src="img/UMLDiagram.png" alt="image of project UML diagram" />
+        <p>This is the UML Class Diagram for the application. This diagram details the classes used to store and represent data for the Game Buttons, Game Save Data, and User Data. The diagram also details the controller classes used to navigate and perform functions and the services used to play the game and connect with the MySQL database to manage User and Game Save data.</p>
+    </div>
+    <br />
 
-<h3>Code Snippets</h3>
-<p>Insert Code Snippets Here</p>
-<h5>Button Model Class</h5>
-<p style="white-space: pre;">
-    // class: ButtonModel. This class represents a button in the application&#39;s game board
-    public class ButtonModel
-    {
-    public ButtonModel(int buttonId, int state)
-    {
-    ButtonId = buttonId;
-    State = state;
-    }
+    <h3>Code Snippets</h3>
+    <p>Insert Code Snippets Here</p>
+    <h5>Button Model Class</h5>
+    <p style="white-space: pre;">
+        // class: ButtonModel. This class represents a button in the application&#39;s game board
+        public class ButtonModel
+        {
+        public ButtonModel(int buttonId, int state)
+        {
+        ButtonId = buttonId;
+        State = state;
+        }
 
-    // ButtonID: the button&#39;s id on the board
-    public int ButtonId { get; set; }
+        // ButtonID: the button&#39;s id on the board
+        public int ButtonId { get; set; }
 
-    // State: the button&#39;s state, 1 is on, 0 is off
-    public int State { get; set; }
-    }
-</p>
-<h5>User Model Class</h5>
-<p style="white-space: pre;">
-    // class: UserModel. This class represents a user in the application. This class is used for logging in users and managing saved game data for the user.
-    public class UserModel
-    {
-    public UserModel()
-    {
-    }
+        // State: the button&#39;s state, 1 is on, 0 is off
+        public int State { get; set; }
+        }
+    </p>
+    <h5>User Model Class</h5>
+    <p style="white-space: pre;">
+        // class: UserModel. This class represents a user in the application. This class is used for logging in users and managing saved game data for the user.
+        public class UserModel
+        {
+        public UserModel()
+        {
+        }
 
-    // constructor for saving or retrieving user data
-    public UserModel(int userId, string username, string password)
-    {
-    UserId = userId;
-    Username = username;
-    Password = password;
-    }
+        // constructor for saving or retrieving user data
+        public UserModel(int userId, string username, string password)
+        {
+        UserId = userId;
+        Username = username;
+        Password = password;
+        }
 
-    // UserId: the user&#39;s ID number
-    public int UserId { get; set; }
+        // UserId: the user&#39;s ID number
+        public int UserId { get; set; }
 
-    // Username: the user&#39;s selected username. This username must be unique to be saved to the MySQL server
-    public string Username { get; set; }
+        // Username: the user&#39;s selected username. This username must be unique to be saved to the MySQL server
+        public string Username { get; set; }
 
-    // Password: the user&#39;s password. This password is encrypted using BCrypt.NET-Next
-    public string Password { get; set; }
-    }
-</p>
-<h5>Game Logic Class Change Button Method</h5>
-<p style="white-space: pre;">
-    // method: changeButtons. This method changes the button board based on the button clicked. This method returns the updated list of buttons.
-    public List<ButtonModel>
-        changeButtons(List<ButtonModel>
-            buttons, int buttonId) {
-            // retrieve the current value of the selected button
-            int value = buttons.ElementAt(buttonId).State;
+        // Password: the user&#39;s password. This password is encrypted using BCrypt.NET-Next
+        public string Password { get; set; }
+        }
+    </p>
+    <h5>Game Logic Class Change Button Method</h5>
+    <p style="white-space: pre;">
+        // method: changeButtons. This method changes the button board based on the button clicked. This method returns the updated list of buttons.
+        public List<ButtonModel>
+            changeButtons(List<ButtonModel>
+                buttons, int buttonId) {
+                // retrieve the current value of the selected button
+                int value = buttons.ElementAt(buttonId).State;
 
-            // change the button&#39;s state
-            buttons.ElementAt(buttonId).State = (value + 1) % 2;
+                // change the button&#39;s state
+                buttons.ElementAt(buttonId).State = (value + 1) % 2;
 
-            // get the information about the surrounding buttons
-            // is the button on the left a valid button to change?
-            bool clearLeft = buttonId % ROW_LENGTH > 0; // it will only be valid if this button is NOT the first button
+                // get the information about the surrounding buttons
+                // is the button on the left a valid button to change?
+                bool clearLeft = buttonId % ROW_LENGTH > 0; // it will only be valid if this button is NOT the first button
 
-            // is the button on the right a valid button to change?
-            bool clearRight = buttonId % ROW_LENGTH != ROW_LENGTH -1; // it will only be valid if this button is NOT the last button
+                // is the button on the right a valid button to change?
+                bool clearRight = buttonId % ROW_LENGTH != ROW_LENGTH -1; // it will only be valid if this button is NOT the last button
 
-            // is the button above this button a valid button to change?
-            bool clearTop = buttonId > ROW_LENGTH - 1; // it will only be valid if this button is NOT on the first row
+                // is the button above this button a valid button to change?
+                bool clearTop = buttonId > ROW_LENGTH - 1; // it will only be valid if this button is NOT on the first row
 
-            // is the button below this button a valid button to change?
-            bool clearBottom = buttonId < GRID_SIZE - ROW_LENGTH; // it will only be valid if this button is NOT on the last row.
+                // is the button below this button a valid button to change?
+                bool clearBottom = buttonId < GRID_SIZE - ROW_LENGTH; // it will only be valid if this button is NOT on the last row.
 
-            //change the buttons that are valid
-            if (clearLeft) { buttons.ElementAt(buttonId - 1).State = (buttons.ElementAt(buttonId - 1).State + 1) % 2; }
-            if (clearRight) { buttons.ElementAt(buttonId + 1).State = (buttons.ElementAt(buttonId + 1).State + 1) % 2; }
-            if (clearTop) { buttons.ElementAt(buttonId - ROW_LENGTH).State = (buttons.ElementAt(buttonId - ROW_LENGTH).State + 1) % 2; }
-            if (clearBottom) { buttons.ElementAt(buttonId + ROW_LENGTH).State = (buttons.ElementAt(buttonId + ROW_LENGTH).State + 1) % 2; }
+                //change the buttons that are valid
+                if (clearLeft) { buttons.ElementAt(buttonId - 1).State = (buttons.ElementAt(buttonId - 1).State + 1) % 2; }
+                if (clearRight) { buttons.ElementAt(buttonId + 1).State = (buttons.ElementAt(buttonId + 1).State + 1) % 2; }
+                if (clearTop) { buttons.ElementAt(buttonId - ROW_LENGTH).State = (buttons.ElementAt(buttonId - ROW_LENGTH).State + 1) % 2; }
+                if (clearBottom) { buttons.ElementAt(buttonId + ROW_LENGTH).State = (buttons.ElementAt(buttonId + ROW_LENGTH).State + 1) % 2; }
 
 
-            // return the updated list of buttons
-            return buttons;
-            }
-</p>
-<br />
-<p>The entire source code can be viewed at:</p>
-<a href="https://github.com/nathanwmeyer/451-NathanMeyer-SeniorProject/tree/master/451-NathanMeyer-SeniorProject">https://github.com/nathanwmeyer/451-NathanMeyer-SeniorProject/tree/master/451-NathanMeyer-SeniorProject</a>
-<br/><br/>
+                // return the updated list of buttons
+                return buttons;
+                }
+    </p>
+    <br />
+    <p>The entire source code can be viewed at:</p>
+    <a href="https://github.com/nathanwmeyer/451-NathanMeyer-SeniorProject/tree/master/451-NathanMeyer-SeniorProject">https://github.com/nathanwmeyer/451-NathanMeyer-SeniorProject/tree/master/451-NathanMeyer-SeniorProject</a>
+    <br /><br />
 
-<h3>Project Background Details</h3>
-<p>The purpose of this project is to develop an online game application that allows users to play a puzzle game where internet access is available. The goal is to provide entertainment for users by developing an application that is easy to access and use.</p>
-<br />
+    <h3>Project Background Details</h3>
+    <p>The purpose of this project is to develop an online game application that allows users to play a puzzle game where internet access is available. The goal is to provide entertainment for users by developing an application that is easy to access and use.</p>
+    <br />
 
-<h3>Approach to Implementation</h3>
-<h5>General Technical Approach:</h5>
-<p>This project is a web-based application that can be used by any user through a web browser. When the user first accesses the website, they will be given the choice to log in or register a user account. If they attempt to access the game page without logging in, they will be redirected to the registration page instead. When registering, the user must provide a username and password, which will be stored securely on a MySQL server. After logging in or registering, the user will be allowed to play the game. While they are playing the game, the user can save the game, load a previously saved game, or reset the game board with a new game.</p>
-<h5>Implementation of Non-Functional Requirements</h5>
-<p>For the storage and management of data, we used MySQL for the Database management software. In addition, BCrypt.Net-Next was implemented to allow for the secure hashing of passwords. Finally, C# .NET was utilized to allow for the usage of Razor webpages and C# classes in the creation of the application&#39;s classes.</p>
-<br />
+    <h3>Approach to Implementation</h3>
+    <h5>General Technical Approach:</h5>
+    <p>This project is a web-based application that can be used by any user through a web browser. When the user first accesses the website, they will be given the choice to log in or register a user account. If they attempt to access the game page without logging in, they will be redirected to the registration page instead. When registering, the user must provide a username and password, which will be stored securely on a MySQL server. After logging in or registering, the user will be allowed to play the game. While they are playing the game, the user can save the game, load a previously saved game, or reset the game board with a new game.</p>
+    <h5>Implementation of Non-Functional Requirements</h5>
+    <p>For the storage and management of data, we used MySQL for the Database management software. In addition, BCrypt.Net-Next was implemented to allow for the secure hashing of passwords. Finally, C# .NET was utilized to allow for the usage of Razor webpages and C# classes in the creation of the application&#39;s classes.</p>
+    <br />
 
-<h3>How to Access Project</h3>
-<p>Please click the link below to be sent to the project website.</p>
-<a href="https://gcu-seniorproject-nathanm.azurewebsites.net">Continue to Senior Project</a>
+    <h3>How to Access Project</h3>
+    <p>Please click the link below to be sent to the project website.</p>
+    <a href="https://gcu-seniorproject-nathanm.azurewebsites.net">Continue to Senior Project</a>
 </div>
